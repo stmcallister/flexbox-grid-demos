@@ -1,0 +1,10 @@
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.page-wrapper div {
+    border: 1px solid black;
+    border-radius: 3px;
+}

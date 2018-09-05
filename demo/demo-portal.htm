@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Demo Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <h1>Developers Portal</h1>
+    <div class="page-wrapper">
+        <div class="item intro">
+            <h4>
+                <b>The Smartsheet API</b>
+            </h4>
+
+            <p>Welcome to the Smartsheet Developer Portal! This site contains information about the Smartsheet API, sample code,
+                developer documentation, app connectors, and links to our SDKs and a sample app for each SDK.</p>
+
+            <p>In addition, you'll find information about how to get support and some frequently asked questions about the API</p>
+        </div>
+        <div class="item overview">
+            <h4 id="dev_header">
+                <b>Overview and Highlights</b>
+            </h4>
+
+            <p>The Smartsheet API allows you to programmatically access and manage your organization's Smartsheet data and account
+                information. The API allows you to do the following:</p>
+
+            <ul>
+                <li>Read and update sheets</li>
+                <li>Manage folders and workspaces</li>
+                <li>Administer users and accounts</li>
+            </ul>
+
+            <p>If you want to transfer data back&nbsp;and forth between Smartsheet and your internal tools, you can integrate
+                between that service's API and the Smartsheet API.</p>
+        </div>
+        <div class="item quick-start">
+            <h4 id="dev_header">
+                <b>Quick Start</b>
+            </h4>
+
+            <p>If you're a developer and just want to dive in, there's a&nbsp;
+                <a href="https://github.com/smartsheet-platform/getting-started">Getting Started</a> guide using REST, cURL, and JSON to introduce you to the most important objects in our
+                API.
+            </p>
+
+            <p>Our
+                <a href="https://smartsheet-platform.github.io/api-docs/">API documentation</a> has the reference details you need plus overview information and request and response
+                examples for every method.</p>
+
+            <p>If you need to build an app that integrates with Smartsheet, there are step-by-step instructions for
+                <a href="https://smartsheet-platform.github.io/api-docs/#third-party-app-development">Third-party App Development</a>.</p>
+        </div>
+
+        <div class="item sdks">
+            <h4 id="dev_header">
+                <strong>SDKs</strong>
+            </h4>
+
+            <p>Smartsheet has Software Development Kits (SDKs) providing a higher level interface for several languages. There
+                is also a sample app provided for each SDK.</p>
+
+            <div id="sdk_table_wrapper">
+                <div class="sdk_container">
+                    <div class="sdk_container_title"> C# </div>
+                    <div>
+                        <a href="https://github.com/smartsheet-platform/smartsheet-csharp-sdk" target="_blank">SDK</a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-samples/csharp-read-write-sheet" target="_blank">Sample</a>
+                    </div>
+                </div>
+
+                <div class="sdk_container">
+                    <div class="sdk_container_title">Java</div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-platform/smartsheet-java-sdk" target="_blank">SDK</a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-samples/java-read-write-sheet" target="_blank">Sample</a>
+                    </div>
+                </div>
+
+                <div class="sdk_container">
+                    <div class="sdk_container_title">Node</div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-platform/smartsheet-javascript-sdk" target="_blank">SDK</a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-samples/node-read-write-sheet" target="_blank">Sample</a>
+                    </div>
+                </div>
+
+                <div class="sdk_container">
+                    <div class="sdk_container_title">Python</div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-platform/smartsheet-python-sdk" target="_blank">SDK</a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-samples/python-read-write-sheet" target="_blank">Sample</a>
+                    </div>
+                </div>
+
+                <div class="sdk_container">
+                    <div class="sdk_container_title">Ruby</div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-platform/smartsheet-ruby-sdk" target="_blank">SDK</a>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/smartsheet-samples/ruby-read-write-sheet" target="_blank">Sample</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item resources">
+            <h4 id="dev_header">
+                <b>Resources and Support</b>
+            </h4>
+
+            <p>If you have questions or problems, we have a variety of ways to support you:</p>
+
+            <ul>
+                <li>Our
+                    <a href="https://www.smartsheet.com/gethelp">Get Help</a> page prompts you to enter relevant details, which makes it easier for us to troubleshoot
+                    your case.
+                </li>
+                <li>Send email directly to
+                    <a href="mailto:api@smartsheet.com">api@smartsheet.com</a>.</li>
+                <li>In addition, you can widen your request to other users by using the "smartsheet-api" tag in
+                    <a href="https://stackoverflow.com/questions/tagged/smartsheet-api">StackOverflow</a>, which we also monitor.</li>
+            </ul>
+
+            <p>The
+                <a href="https://developers.smartsheet.com/blog">Smartsheet Developer's Blog</a> has a variety of useful tips, tricks, and tutorials about working with the
+                Smartsheet API. The blog also contains articles about product updates, event reports, or any other Smartsheet-related
+                content that we think would be interesting to developers.&nbsp;</p>
+        </div>
+        <div class="item integrations">
+            <h4 id="dev_header">
+                <b>Existing Integrations and Consulting Services</b>
+            </h4>
+
+            <p>Not quite ready to build your own integration or just need a custom solution yesterday?</p>
+
+            <p>We support synchronizing data with
+                <a href="https://www.smartsheet.com/jira">Jira</a> and
+                <a href="https://www.smartsheet.com/salesforce">Salesforce</a> or visualizing Smartsheet data in
+                <a href="https://www.smartsheet.com/apps/smartsheet-odbc">Tableau via our Live Data Connector</a>, as well as extensive Google GSuite and Microsoft Office 365 integrations.
+                Please see our complete list of
+                <a href="https://www.smartsheet.com/apps">Apps, Integrations, and Connectors</a>.</p>
+
+            <p>In addition, we provide
+                <a href="https://www.smartsheet.com/consulting">consulting services</a> for more complex problems.</p>
+        </div>
+        <div class="item faq">
+            <h4 id="dev_header">
+                <b>FAQ</b>
+            </h4>
+
+            <p>Q: Is there a fee to use the API?</p>
+
+            <p>A: No. The use of the API is free to all Smartsheet customers, regardless of plan, and third-party application
+                developers.
+            </p>
+
+            <p>Q: What are the legal terms and conditions of the Smartsheet Developer Program?</p>
+
+            <p>A: The Smartsheet developer program is governed by the
+                <a href="https://www.smartsheet.com/legal/developer-program-agreement">Smartsheet Developer Program Agreement</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
