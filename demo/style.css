@@ -22,10 +22,11 @@ a:hover {
     border-radius: 3px;
     padding: 10px;
 }
-
+ 
 .intro {
     grid-column: 1/5;
 }
+
 .overview {
     grid-column: 1/3;
 }
