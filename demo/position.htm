@@ -22,14 +22,14 @@
 
         .relative {
             position: relative;
-            top: 65px;
-            left: 65px;
+            top: 10px;
+            left: 80px;
             background: red;
         }
 
         .absolute {
             position: absolute;
-            top: 80px;
+            top: 10px;
             left: 80px;
             background: yellow;
         }
@@ -44,12 +44,19 @@
 </head>
 <body>
     <!-- Topics to Demo -->
+    <!-- 1. Relative (position relative to the starting point of element)-->
+    <!-- 2. Absolute (position relative to the window) -->
+    <!-- 3. Sticky -->
+
     <h2>Position</h2>
     <div class="container">
+        <!-- sticky -->
         <div class="item sticky">1</div>
         <div class="item">2</div>
+        <!-- relative -->
         <div class="item relative">3</div>
         <div class="item">4</div>
+        <!-- absolute -->
         <div class="item absolute">5</div>
         <div class="item">6</div>
     </div>  

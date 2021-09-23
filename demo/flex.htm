@@ -6,16 +6,16 @@
         .container {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            justify-content: center;
+
             background: black;
             border: 3px solid orange;
             border-radius: 3px;
             margin: 20px;
         }
         .item {
-            flex-grow: 1;
-            /* flex-shrink: 1; */
-            width: 100px;
+            width: 150px;
             height: 40px;
             border: 1px solid darkslategrey;
             background-color: turquoise;
@@ -32,23 +32,28 @@
         flex-wrap:wrap, wrap-reverse, nowrap (set item width so that they wrap) 
         flex-flow: shorthand for flex-direction and flex-wrap
 
-        flex-grow: how much an item will grow in relation to other items
-        flex-shrink: how much an item will shrink in relation to other items
+        flex-grow: how much space is available for a given item in relation to other items
+        flex-shrink: how much an item will shrink in relation to other items 
+            when container space is constrained
         flex-basis: initial size of an item
-        flex: <grow> <shrink> <basis>
+
+        short-hand--
+            flex: <grow> <shrink> <basis>
 
         justify-content: flex-start, flex-end, center, 
                         space-around, space-between
             ==> defines the alignment along the main axis of container
         align-items: stretch, flex-start, flex-end, center, baseline, 
             ==> defines alignment along the cross axis of container
-        horizontal + vertical centering: container { justify-content: center; align-items: center; }
+        horizontal + vertical centering: 
+            container { justify-content: center; align-items: center; }
         
      -->
     <h2>Flexbox</h2>
     <div class="container">
         <div class="item">1</div>
-        <div class="item" style="flex-grow: 2;">2</div>
+        <!-- DEMO flex-grow and flex-shrink -->
+        <div class="item" >2</div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>

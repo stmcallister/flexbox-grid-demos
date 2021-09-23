@@ -5,8 +5,8 @@
     <style>
         .container {
             display:grid;
-            grid-template-columns: 100px 100px 100px; 
-            gap: 5px 20px;
+            grid-template-columns: repeat(2, 1fr) 2fr; 
+            gap: 5px 50px;
             background: black;
             border: 3px solid orange;
             border-radius: 3px;
@@ -25,6 +25,10 @@
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 4;
+        }
+        .zero {
+            grid-column-start: -4;
+            grid-column-end: -2;
         }
     </style>
 </head>
@@ -54,7 +58,7 @@
         <div class="item">7</div>
         <div class="item">8</div>
         <div class="item">9</div>
-        <div class="item">10</div>
+        <div class="item zero">10</div>
     </div>  
 </body>
 </html>
