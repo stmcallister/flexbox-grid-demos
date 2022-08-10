@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Grid Demo</title>
     <style>
         .container {
-            display:grid;
-            grid-template-columns: repeat(2, 1fr) 2fr; 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 5px 50px;
+            /* grid-auto-rows: 100px; */
             background: black;
             border: 3px solid orange;
             border-radius: 3px;
             margin: 50px;
         }
+        
         .item {
             height: minmax(40px, auto);
             border: 1px solid darkslategrey;
@@ -19,6 +22,7 @@
             border-radius: 3px;
             padding: 10px;
         }
+        
         .main {
             background-color: yellow;
             grid-column-start: 1;
@@ -26,12 +30,14 @@
             grid-row-start: 2;
             grid-row-end: 4;
         }
+        
         .zero {
             grid-column-start: -4;
             grid-column-end: -2;
         }
     </style>
 </head>
+
 <body>
     <!-- Topics to Demo -->
     <!-- 
@@ -52,13 +58,14 @@
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item main">5</div>
+        <div class="item main">4</div>
+        <div class="item">5</div>
         <div class="item">6</div>
         <div class="item">7</div>
         <div class="item">8</div>
         <div class="item">9</div>
-        <div class="item zero">10</div>
-    </div>  
+        <div class="item">10</div>
+    </div>
 </body>
+
 </html>

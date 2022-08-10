@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Flex Demo</title>
     <style>
         .container {
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-
+            /* flex-direction: row; */
+            /* flex-wrap: wrap-reverse; */
+            flex-flow: row wrap;
+            justify-content: space-between;
             background: black;
             border: 3px solid orange;
             border-radius: 3px;
             margin: 20px;
         }
+        
         .item {
             width: 150px;
             height: 40px;
@@ -22,8 +24,21 @@
             border-radius: 3px;
             padding: 10px;
         }
+        
+        .grow-3 {
+            flex-grow: 3;
+        }
+        
+        .shrink-3 {
+            flex-shrink: 3;
+        }
+        
+        .shrink-0 {
+            flex-shrink: 0;
+        }
     </style>
 </head>
+
 <body>
     <!-- Topics to Demo -->
     <!-- 
@@ -53,10 +68,11 @@
     <div class="container">
         <div class="item">1</div>
         <!-- DEMO flex-grow and flex-shrink -->
-        <div class="item" >2</div>
+        <div class="item">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
-    </div>  
+    </div>
 </body>
+
 </html>
