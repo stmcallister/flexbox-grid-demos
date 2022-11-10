@@ -8,12 +8,12 @@
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
             background: black;
             border: 3px solid orange;
             border-radius: 3px;
             margin: 20px;
-            justify-content: center;
-            align-items: center;
             height: 500px;
         }
         
@@ -32,19 +32,6 @@
 <body>
     <!-- Topics to Demo -->
     <!-- 
-        flex-direction: row, column, row-reverse, column-reverse
-
-        flex-wrap:wrap, wrap-reverse, nowrap (set item width so that they wrap) 
-        flex-flow: shorthand for flex-direction and flex-wrap
-
-        flex-grow: how much an item will grow in relation to other items
-        flex-shrink: how much an item will shrink in relation to other items
-        flex-basis: initial size of an item
-        flex: <grow> <shrink> <basis>
-
-        justify-content: flex-start, flex-end, center, 
-                        space-around, space-between
-            ==> defines the alignment along the main axis of container
         align-items: stretch, flex-start, flex-end, center, baseline, 
             ==> defines alignment along the cross axis of container
         horizontal + vertical centering: container { justify-content: center; align-items: center; }

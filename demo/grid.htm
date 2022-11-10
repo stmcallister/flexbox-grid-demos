@@ -7,12 +7,16 @@
         .container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 5px 50px;
-            /* grid-auto-rows: 100px; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: repeat(3, 1fr); */
+            gap: 10px 20px;
             background: black;
             border: 3px solid orange;
             border-radius: 3px;
             margin: 50px;
+            padding: 10px;
         }
         
         .item {
@@ -26,9 +30,14 @@
         .main {
             background-color: yellow;
             grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-end: -1;
             grid-row-start: 2;
             grid-row-end: 4;
+        }
+        
+        .span {
+            grid-column: span 2;
+            grid-row: span 3;
         }
         
         .zero {
@@ -58,11 +67,11 @@
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
-        <div class="item main">4</div>
-        <div class="item">5</div>
+        <div class="item">4</div>
+        <div class="item main">5</div>
         <div class="item">6</div>
         <div class="item">7</div>
-        <div class="item">8</div>
+        <div class="item span">8</div>
         <div class="item">9</div>
         <div class="item">10</div>
     </div>

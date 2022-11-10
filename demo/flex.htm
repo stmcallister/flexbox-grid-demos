@@ -6,14 +6,15 @@
     <style>
         .container {
             display: flex;
-            /* flex-direction: row; */
+            flex-direction: row;
             /* flex-wrap: wrap-reverse; */
-            flex-flow: row wrap;
             justify-content: space-between;
+            /* flex-flow: row wrap; */
             background: black;
             border: 3px solid orange;
             border-radius: 3px;
             margin: 20px;
+            /* height: 500px; */
         }
         
         .item {
@@ -42,8 +43,7 @@
 <body>
     <!-- Topics to Demo -->
     <!-- 
-        flex-direction: row, column, row-reverse, column-reverse
-
+        flex-direction: row, row-reverse, column, , column-reverse
         flex-wrap:wrap, wrap-reverse, nowrap (set item width so that they wrap) 
         flex-flow: shorthand for flex-direction and flex-wrap
 
@@ -57,12 +57,7 @@
 
         justify-content: flex-start, flex-end, center, 
                         space-around, space-between
-            ==> defines the alignment along the main axis of container
-        align-items: stretch, flex-start, flex-end, center, baseline, 
-            ==> defines alignment along the cross axis of container
-        horizontal + vertical centering: 
-            container { justify-content: center; align-items: center; }
-        
+            ==> defines the alignment along the main axis of container        
      -->
     <h2>Flexbox</h2>
     <div class="container">
