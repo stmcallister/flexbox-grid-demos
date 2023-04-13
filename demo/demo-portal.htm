@@ -1,146 +1,114 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-
 <head>
     <title>Demo Portal</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
 <body>
-    <h1>PagerDuty Developers Portal</h1>
+    <div>
+        <a href="index.htm">< back to index</a>
+    </div>
+    <h1>ngrok Platform Overview</h1>
     <div class="page-wrapper">
         <div class="item intro">
-            <h4>
+            <h2>
                 Introduction
-            </h4>
-
-            <p>This page will help you get started with PagerDuty. You'll be up and running in a jiffy!</p>
-
-            <p>PagerDuty provides a number of ways to programmatically interact with a PagerDuty account.</p>
-            <p>Whether you are looking to alter an account's configuration, pipe events from a monitoring tool into PagerDuty, update other systems when actions take place in PagerDuty, or retrieve information about activity on a PagerDuty account, there
-                are APIs that expose this functionality to your code.</p>
-            <p>The details of how to interact with any given API are accessible in documentation guides listed in the left column navigation.</p>
+            </h2>
+            <p>ngrok is the fastest way to host and secure your applications and services on the internet. Learn how by following our getting started guide, or dive straight into our products and offerings.</p>
         </div>
-        <div class="item overview">
-            <h4 id="dev_header">
-                <b>REST API</b>
-            </h4>
-            <p>The REST API is used for accessing and manipulating data concerning all of the entities on a PagerDuty account. It is designed around RESTful principles and provides a standard suite of CRUD actions for most entities: create, read, update,
-                and delete.</p>
-            <p>Using the REST API, you can do things like:</p>
-            <ul>
-                <li>add and configure users on a PagerDuty account, including how they're notified by PagerDuty</li>
-                <li>set up workflows for responding to incidents</li>
-                <li>find out who is on call and when they're being notified</li>
-                <li>display a list of open or recent incidents for a team</li>
-                <li>manually create an incident without an associated monitoring tool</li>
-            </ul>
-            <div>Note</div>
-            <p>The REST API should not be used to create incidents originating from monitoring systems or other automated tools - for that, use the Events API instead. Read more about the synchronous Incident Creation API.</p>
-            <p>Ready to dive in? Read the REST API Overview to get started and consult the API Reference for comprehensive details about each endpoint and to try it out right from the documentation.</p>
+        <div class="item connect">
+            <h2 id="dev_header">
+                Connect: Getting Started
+            </h2>
+            <p>Discover how to install and start an ngrok agent via the CLI to securely share and access your content in a few minutes.</p>
+            <a href="https://ngrok.com/docs/getting-started/">
+                Get started with ngrok
+            </a>
         </div>
-        <div class="item quick-start">
-            <h4 id="dev_header">
-                <b>Events API</b>
-            </h4>
-
-            <p>The Events APIs, v2 and v1, are asynchronous APIs for connecting your systems to PagerDuty via various monitoring tools. Through the Events APIs, events — which represent occurrences in the services managed by an account — are sent to PagerDuty
-                to be processed.
+        <div class="item inspection">
+            <h2 id="dev_header">
+                Inspection Interface
+            </h2>
+            <div>View traffic in realtime using the ngrok agent inspection interface</div>
+        </div>
+        <div class="item libs">
+            <h2 id="dev_header">
+                Libraries
+            </h2>
+            <p>
+                Want to get started using ngrok APIs quickly and easily? ngrok creates, maintains, and supports some API libraries. This 
+                directory includes our official libraries, as well as all third-party libraries known to us which support our current public 
+                APIs.
             </p>
-
-            <p>If you're looking to leverage PagerDuty's Event Management features to turn data gathered from monitoring tools into actionable incidents, the Events APIs are the gateway to doing so.
-            </p>
-
-            <p>The Events API v2 Overview and Events API v1 Overview have the basics on what events are and how to send them to PagerDuty.</p>
-        </div>
-
-        <div class="item sdks">
-            <h4 id="dev_header">
-                <strong>SDKs</strong>
-            </h4>
-
-            <p>Want to get started using PagerDuty APIs quickly and easily? PagerDuty creates, maintains, and supports some API libraries, as does our user community. This directory includes our official libraries, as well as all third-party libraries known
-                to us which support our current public APIs.</p>
-
-            <div id="sdk_table_wrapper">
-                <div class="sdk_container">
-                    <div class="sdk_container_title"> C# </div>
-                    <div>
-                        <a href="https://github.com/cdegroot/pagerduty-api-dotnet-client" target="_blank">SDK</a>
+            <div id="lib_table_wrapper">
+                <a href="https://ngrok.com/docs/using-ngrok-with/go/" target="_blank">
+                    <div class="lib_container">
+                        <div class="lib_container_title">Go</div>
+                        <div>
+                            ngrok-go library
+                        </div>
                     </div>
-                </div>
-
-                <div class="sdk_container">
-                    <div class="sdk_container_title">Java</div>
-
-                    <div>
-                        <a href="https://dikhan.github.io/pagerduty-client/" target="_blank">SDK</a>
+                </a>
+                <a href="https://ngrok.com/docs/using-ngrok-with/rust/" target="_blank">
+                    <div class="lib_container">
+                        <div class="lib_container_title">Rust</div>
+                        <div>
+                            ngrok-rs crate
+                        </div>
                     </div>
-                </div>
-
-                <div class="sdk_container">
-                    <div class="sdk_container_title">Node</div>
-
-                    <div>
-                        <a href="https://github.com/kmart2234/node-pagerduty" target="_blank">SDK</a>
+                </a>
+                <a href="https://ngrok.com/docs/using-ngrok-with/node-js/" target="_blank">
+                    <div class="lib_container">
+                        <div class="lib_container_title">Node.js</div>
+                        <div>
+                            ngrok-js
+                        </div>
                     </div>
-                </div>
-
-                <div class="sdk_container">
-                    <div class="sdk_container_title">Go</div>
-
-                    <div>
-                        <a href="https://github.com/PagerDuty/go-pagerduty" target="_blank">SDK</a>
+                </a>
+                <a href="https://ngrok.com/docs/using-ngrok-with/k8s/" target="_blank">
+                    <div class="lib_container">
+                        <div class="lib_container_title">Kubernetes</div>
+                        <div>
+                            Ingress Controller
+                        </div>
                     </div>
-                </div>
-
-                <div class="sdk_container">
-                    <div class="sdk_container_title">Ruby</div>
-
-                    <div>
-                        <a href="https://github.com/envato/pagerduty" target="_blank">SDK</a>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
-        <div class="item webhooks">
-            <h4 id="dev_header">
-                <b>Webhooks</b>
-            </h4>
-
-            <p>Via Webhooks, PagerDuty will send information about actions taking place within PagerDuty to any software of your choice that can accept an HTTP request.
-            </p>
-            <p>Check out the Webhooks Overview to learn how to parse and interpret webhooks that are sent to your software, as well as the different types of webhooks that your software can receive.</p>
+        <div class="item secure">
+            <h2 id="dev_header">
+               Secure
+            </h2>
+            <div>
+                <h3>Securing your tunnels</h3>
+                <p>This guide will walk you through running and using ngrok securely</p>
+            </div>
+            <div>
+                <h3>OAuth</h3>
+                <p>Secure your application using OAuth. Up to 50 MAUs on the free tier</p>
+            </div>
         </div>
-        <div class="item integrations">
-            <h4 id="dev_header">
-                <b>Integrate with PagerDuty</b>
-            </h4>
-
-            <p> Integrations can be built for internal, private use or for public distribution. Building a first-class PagerDuty integration is a great way to get your offering noticed by the PagerDuty community.</p>
-            <p>Publishing an integration with us gives you these benefits:</p>
-            <ul>
-                <li>A listing in our integrations directory</li>
-                <li>Exposure to PagerDuty’s large DevOps community</li>
-                <li>Streamlined set up for PagerDuty users</li>
-                <li>Opportunity for coordinated launch communication</li>
-                <li>If you are interested in publishing an integration, please register here.</li>
+        <div class="item webhook_verification">
+            <h2 id="dev_header">
+                Webhook Verification
+            </h2>
+            <p>Secure your webhooks. Up to 500 verifications on the free tier</p>
         </div>
         <div class="item faq">
-            <h4 id="dev_header">
-                <b>FAQ</b>
-            </h4>
-
-            <p>Q: WHAT ARE THE CHANGES IN REST API V2?</p>
-
-            <p>A: REST API v2 enables developers and non-developers to extend the PagerDuty platform with ease. Additionally, customers will have access to far more comprehensive documentation including reliable client libraries/SDKs, so they can deliver
-                with more agility and performance when building new PagerDuty tools against the REST API.
-            </p>
-
-            <p>Q: WHAT ARE THE BENEFITS OF THE NEWER REST API? WHY SHOULD I SWITCH?</p>
-
-            <p>A: The benefits of migrating over to REST API v2 include improved consistency and ease of development, more endpoints and potential add-ons (both pre-built and custom/edge cases), as well as new and improved supporting documentation, best
-                practices and SDKs.</p>
+            <h2 id="dev_header">
+                Reference Documentation
+            </h2>
+            <div>
+                <h3>ngrok agent</h3>
+                <p>Use the ngrok agent CLI to start and stop secure tunnels.</p>
+                <p><a href="https://ngrok.com/docs/ngrok-agent/" target="_blank">Learn More</a></p>
+            </div>
+            <div>
+                <h3>ngrok API</h3>
+                <p>Use the API to programmatically manage your ngrok resources.</p>
+                <p><a href="https://ngrok.com/docs/api/" target="_blank">Learn More</a></p>
+            </div>
         </div>
     </div>
 </body>

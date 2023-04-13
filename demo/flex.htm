@@ -7,9 +7,9 @@
         .container {
             display: flex;
             flex-direction: row;
-            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: nowrap; */
+            flex-flow: row wrap;
             justify-content: space-between;
-            /* flex-flow: row wrap; */
             background: black;
             border: 3px solid orange;
             border-radius: 3px;
@@ -41,12 +41,18 @@
 </head>
 
 <body>
+    <div>
+        <a href="index.htm">< back to index</a>
+    </div>
     <!-- Topics to Demo -->
     <!-- 
-        flex-direction: row, row-reverse, column, , column-reverse
+        flex-direction: row, row-reverse, column, column-reverse
         flex-wrap:wrap, wrap-reverse, nowrap (set item width so that they wrap) 
         flex-flow: shorthand for flex-direction and flex-wrap
-
+        justify-content: flex-start, flex-end, center, 
+                        space-around, space-between
+            ==> defines the alignment along the main axis of container        
+        
         flex-grow: how much space is available for a given item in relation to other items
         flex-shrink: how much an item will shrink in relation to other items 
             when container space is constrained
@@ -55,9 +61,6 @@
         short-hand--
             flex: <grow> <shrink> <basis>
 
-        justify-content: flex-start, flex-end, center, 
-                        space-around, space-between
-            ==> defines the alignment along the main axis of container        
      -->
     <h2>Flexbox</h2>
     <div class="container">
